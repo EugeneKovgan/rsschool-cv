@@ -43,7 +43,7 @@ a {
   color: #b22222;
 }
 
-footer {
+article {
   display: flex;
   justify-content: space-between;
   align-items: center;
