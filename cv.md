@@ -29,7 +29,7 @@
                 <hr>
                 <ul>
                     <li>&#10004; HTML, CSS, JavaScript, GitHub, firebase</li>
-                    <li>&#10004; English language – A1-A2</li>
+                    <li>&#10004; English language – A2-B1</li>
                 </ul>
                 <h3>EXPERIENCE</h3>
                 <hr>
