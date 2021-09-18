@@ -14,8 +14,10 @@ html {
   display: inline-block;
   max-width: 100%;
 }
+
 .container {
   margin: 0 auto;
+  max-width: 80%;
 }
 .navbar {
   margin-bottom: 20px;
@@ -24,13 +26,13 @@ html {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 32px;
   line-height: normal;
   color: #b22222;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
   line-height: normal;
   color: #179c06;
 }
@@ -41,12 +43,11 @@ a {
 }
 .contacts-icons {
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: space-between;
+  max-width: 700px;
+  padding-left: 10px;
 }
-.contacts-icons a {
-  padding-right: 50px;
-  /* transform: scale(1.5); */
-}
+
 li a svg {
   transition: transform 0.2s;
   margin: 0 auto;
@@ -56,9 +57,6 @@ li a svg:hover {
   transform: scale(1.5);
 }
 
-/* .rsscsool {
-  transform: scale(1.5);
-} */
 .skype {
   color: #00aff0;
 }
@@ -74,7 +72,8 @@ li a svg:hover {
 .google {
   color: #1da462;
 }
-.photo {
+
+.photo-inner {
   display: flex;
 }
 
@@ -94,17 +93,28 @@ li a svg:hover {
 .myGit {
   color: #b22222;
 }
-
+footer {
+}
 .article-list {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   padding-bottom: 20px;
   margin: 0;
+  padding-left: 10px;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .container {
-    padding: 10px;
+    max-width: 95%;
   }
-} */
+}
+
+@media (max-width: 425px) {
+  .photo-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .info_box {
+    padding-top: 20px;
+  }
+}
