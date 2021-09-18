@@ -1,20 +1,38 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+
 html {
   margin: 0 auto;
   background-color: rgb(243, 241, 234);
   font-size: 18px;
+  display: inline-block;
+  max-width: 100%;
 }
+
 .container {
   margin: 0 auto;
   max-width: 80%;
 }
+.navbar {
+  margin-bottom: 20px;
+  top: 0px;
+  position: sticky;
+}
+
 h2 {
-  font-size: 30px;
+  font-size: 32px;
   line-height: normal;
   color: #b22222;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 24px;
   line-height: normal;
   color: #179c06;
 }
@@ -23,13 +41,46 @@ a {
   text-decoration: none;
   color: black;
 }
-.photo {
+.contacts-icons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  padding-left: 10px;
+}
+
+li a svg {
+  transition: transform 0.2s;
+  margin: 0 auto;
+  color: black;
+}
+li a svg:hover {
+  transform: scale(1.5);
+}
+
+.skype {
+  color: #00aff0;
+}
+.youtube {
+  color: #c4302b;
+}
+.discord {
+  color: #7289da;
+}
+.linkedin {
+  color: #0e76a8;
+}
+.google {
+  color: #1da462;
+}
+
+.photo-inner {
   display: flex;
 }
 
 .my_photo {
-  max-width: 200px;
-  margin-right: 20px;
+  width: 220px;
+  margin-right: 25px;
+  border-radius: 10%;
 }
 
 .logo {
@@ -42,9 +93,28 @@ a {
 .myGit {
   color: #b22222;
 }
-
 footer {
+}
+.article-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-bottom: 20px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 425px) {
+  .photo-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .info_box {
+    padding-top: 20px;
+  }
 }
