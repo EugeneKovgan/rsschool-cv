@@ -48,6 +48,15 @@ h3 {
   line-height: normal;
   color: #179c06;
 }
+h4 {
+  font-size: 24px;
+  text-decoration: underline;
+}
+h5 {
+  font-size: 24px;
+  text-decoration: underline;
+  margin-top: 25px;
+}
 
 a {
   text-decoration: none;
@@ -69,20 +78,30 @@ li a svg:hover {
   transform: scale(1.5);
 }
 
+pre {
+  margin-top: 10px;
+  margin-left: -35px;
+}
+
 .project-inner {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  /* right: 20px; */
-  /* justify-content: space-between; */
 }
-.project-inner .card {
-  margin-right: 25px;
+.project-inner .card,
+.presentation {
+  margin-right: 15px;
   transition: transform 0.2s;
-  width: 350px;
+  /* width: 380px; */
+  width: 32%;
+  padding-bottom: 15px;
 }
-.project-inner .card:hover {
+.project-inner .card:hover,
+.presentation:hover {
   transform: scale(1.05);
+}
+.presentation {
+  margin-top: 10px;
 }
 
 .skype {
@@ -111,12 +130,16 @@ li a svg:hover {
   border-radius: 10%;
 }
 
-.logo {
+.logo-rss {
   width: 5em;
   border: 1px solid black;
   float: right;
   bottom: 0;
   right: 0;
+  transition: transform 0.2s;
+}
+.logo-rss:hover {
+  transform: scale(1.5);
 }
 .myGit {
   color: #b22222;
@@ -129,7 +152,14 @@ li a svg:hover {
   margin: 0;
   padding-left: 10px;
 }
-
+@media (max-width: 1160px) {
+  .project-inner .card h4 {
+    font-size: 18px;
+  }
+  .card-text {
+    font-size: 16px;
+  }
+}
 @media (max-width: 768px) {
   html {
     font-size: 16px;
@@ -141,23 +171,28 @@ li a svg:hover {
   h3 {
     font-size: 18px;
   }
+  pre {
+    margin-left: -30px;
+  }
   .container {
     max-width: 95%;
   }
   .project-inner {
     flex-wrap: wrap;
   }
-  .project-inner .card {
+  .project-inner .card,
+  .presentation {
     margin-bottom: 20px;
-    width: 42%;
+    width: 46%;
   }
 }
 @media (max-width: 480px) {
-  pre {
-    margin-left: -25px;
-  }
   .JavaScript {
     font-size: 14px;
+  }
+  .project-inner .card,
+  .presentation {
+    width: 95%;
   }
 }
 @media (max-width: 425px) {
@@ -171,23 +206,19 @@ li a svg:hover {
   .project-inner {
     flex-wrap: wrap;
   }
-  .project-inner .card {
+  .project-inner .card,
+  .presentation {
     margin-bottom: 20px;
     width: 90%;
   }
-  pre {
-    margin-left: -25px;
-  }
+
   .JavaScript {
     font-size: 12px;
   }
 }
 
 @media (max-width: 345px) {
-  pre {
-    margin-left: -35px;
-  }
   .JavaScript {
-    font-size: 10px;
+    font-size: 11px;
   }
 }

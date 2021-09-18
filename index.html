@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KovganEugeneCV</title>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
-
-
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
@@ -19,7 +16,6 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <div class="container-fluid">
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -45,17 +41,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#courses">Courses</a>
                         </li>
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -63,7 +48,6 @@
     </nav>
     <header class="header">
         <div class="container">
-
             <div class="photo-inner">
                 <img src="./img/img_1.jpg" class="my_photo" alt="my_photo">
                 <div class="author">
@@ -130,20 +114,21 @@
                 <h3 id="skills">SKILLS</h3>
                 <hr>
                 <ul>
-                    <li>&#10004;HTML 5, CSS 3, SCSS, JavaScript, GitHub, Gulp,
+                    <li>&#10004;HTML5, CSS3, SCSS, JavaScript, Bootstrap, GitHub, Gulp,
                         Firebase
                     </li>
                     <li>&#10004; English language – A2-B1
                     </li>
-                    <li>My Code Example
+                    <li>
+                        <h5>My Code Example</h5>
                         <pre><code class="JavaScript">
 function cache(func) {
     const cacheObj = {};
     return (...args) => {
         const key = JSON.stringify(args);
         if (!(key in cacheObj)) {
-            const result = func.apply(null,
-             args);
+            const result = func.
+            apply(null, args);
             cacheObj[key] = result;
             }
         return cacheObj[key];
@@ -162,13 +147,17 @@ function cache(func) {
                             <li>&#9873; IT Academy FD2.</li>
                             <li>&#9872; Development of SPA in native JavaScript using MVC and firebase DB.</li>
                         </ul>
+                        <h5>My Projects</h5>
                         <div class="project-inner">
+
 
                             <div class="card">
                                 <a href="https://spa-games-calendar-30d72.web.app/#past" target="_blank">
                                     <img src="./img/img-project-1.png" class="card-img-top" alt="gameCalendar">
                                     <div class="card-body">
-                                        <p class="card-text">game calendar in native JS and using the MVC model</p>
+                                        <h4>Game calendar</h4>
+                                        <p class="card-text">Game calendar on native JS, using the MVC model and DB
+                                            Firibase</p>
                                     </div>
                                 </a>
                             </div>
@@ -177,7 +166,8 @@ function cache(func) {
                                 <a href="https://eugenekovgan.github.io/GoSerf/" target="_blank">
                                     <img src="./img/img-project-2.png" class="card-img-top" alt="goSurf">
                                     <div class="card-body">
-                                        <p class="card-text">Surfing site with adaptive, slick sliderand animation</p>
+                                        <h4>Go Surf</h4>
+                                        <p class="card-text">Surfing site with adaptive, slick slider and animation </p>
                                     </div>
                                 </a>
                             </div>
@@ -186,21 +176,21 @@ function cache(func) {
                                 <a href="https://eugenekovgan.github.io/virtual-piano/" target="_blank">
                                     <img src="./img/img-project-3.png" class="card-img-top" alt="virtualPiano">
                                     <div class="card-body">
+                                        <h4>Virtual piano</h4>
                                         <p class="card-text">Virtual piano on JS</p>
                                     </div>
                                 </a>
                             </div>
-
-                            <div class="card">
-                                <a href="https://studio.youtube.com/video/rjdEc-vj0BM/edit" target="_blank">
-                                    <img src="./img/img-project-1.png" class="card-img-top" alt="presentation">
-                                    <div class="card-body">
-                                        <p class="card-text">game calendar in native JS and using the MVC model</p>
-                                    </div>
-                                </a>
-                            </div>
-
                         </div>
+                        <h5>My Presentation</h5>
+                        <iframe class="presentation" width="560" height="315"
+                            src="https://www.youtube.com/embed/rjdEc-vj0BM" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+
+
+
 
 
 
@@ -212,17 +202,17 @@ function cache(func) {
                     <li>&#10004; 05.2012 – 06.2020
                         <ul>
                             <li>&#9873; «Legir», Minsk - design engineer.
-                                <details>
-                                    <summary>Details</summary>
-                                    <ul>
-                                        <li>&#9872; Creation of 3D models of transformer substations with the subsequent
-                                            development of technical documentation for their production and assembly.
-                                        </li>
-                                        <li>&#9872; Engaged in design, development of those. documentation as well as
-                                            subsequent tech. support of assembly and adjustment of data center equipment
-                                            for the company Velcom (A1).</li>
-                                    </ul>
-                                </details>
+                                <!-- <details> -->
+                                <summary>Details</summary>
+                                <ul>
+                                    <li>&#9872; Creation of 3D models of transformer substations with the subsequent
+                                        development of technical documentation for their production and assembly.
+                                    </li>
+                                    <li>&#9872; Engaged in design, development of those. documentation as well as
+                                        subsequent tech. support of assembly and adjustment of data center equipment
+                                        for the company Velcom (A1).</li>
+                                </ul>
+                                <!-- </details> -->
                             </li>
                         </ul>
                 </ul>
@@ -283,7 +273,7 @@ function cache(func) {
                             </svg></a>
                     </li>
                     <li><span>2021</span></li>
-                    <li><a href="https://rs.school/js/"><img class="logo" src="./img/rs_school_js.svg"
+                    <li><a href="https://rs.school/js/"><img class="logo-rss" src="./img/rs_school_js.svg"
                                 alt="logo RSschool"></a>
                     </li>
                 </ul>
@@ -292,8 +282,7 @@ function cache(func) {
         </div>
     </footer>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZ
-       gAN" crossorigin="anonymous"></script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
         crossorigin="anonymous"></script>
