@@ -1,0 +1,110 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+
+html {
+  margin: 0 auto;
+  background-color: rgb(243, 241, 234);
+  font-size: 18px;
+  display: inline-block;
+  max-width: 100%;
+}
+.container {
+  margin: 0 auto;
+}
+.navbar {
+  margin-bottom: 20px;
+  top: 0px;
+  position: sticky;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: normal;
+  color: #b22222;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: normal;
+  color: #179c06;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.contacts-icons {
+  display: flex;
+  /* justify-content: space-around; */
+}
+.contacts-icons a {
+  padding-right: 50px;
+  /* transform: scale(1.5); */
+}
+li a svg {
+  transition: transform 0.2s;
+  margin: 0 auto;
+  color: black;
+}
+li a svg:hover {
+  transform: scale(1.5);
+}
+
+/* .rsscsool {
+  transform: scale(1.5);
+} */
+.skype {
+  color: #00aff0;
+}
+.youtube {
+  color: #c4302b;
+}
+.discord {
+  color: #7289da;
+}
+.linkedin {
+  color: #0e76a8;
+}
+.google {
+  color: #1da462;
+}
+.photo {
+  display: flex;
+}
+
+.my_photo {
+  width: 220px;
+  margin-right: 25px;
+  border-radius: 10%;
+}
+
+.logo {
+  width: 5em;
+  border: 1px solid black;
+  float: right;
+  bottom: 0;
+  right: 0;
+}
+.myGit {
+  color: #b22222;
+}
+
+.article-list {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+/* @media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+} */

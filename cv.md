@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header">
             <div class="photo">
-                <img src="img_2.JPG" alt="my_photo" width="150px" class="left img" </div>
+                <img src="./img/img_2.JPG" alt="my_photo" width="150px" class="left img" </div>
                 <div class="author">
                     <div class="info_box">
                         <h1>EUGENE KOVGAN</h1>
