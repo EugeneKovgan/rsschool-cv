@@ -1,0 +1,193 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+
+html {
+  margin: 0 auto;
+  background-color: rgb(243, 241, 234);
+  font-size: 18px;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.navbar {
+  margin-bottom: 20px;
+  top: 0px;
+  position: sticky;
+  z-index: 1;
+}
+.nav-link {
+  height: 50px;
+  padding-right: 50px;
+  width: 120px;
+  text-align: center;
+}
+.nav-link:hover {
+  border: 2px solid darkgray;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: normal;
+  color: #b22222;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: normal;
+  color: #179c06;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.contacts-icons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  padding-left: 10px;
+}
+
+li a svg {
+  transition: transform 0.2s;
+  margin: 0 auto;
+  color: black;
+}
+li a svg:hover {
+  transform: scale(1.5);
+}
+
+.project-inner {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* right: 20px; */
+  /* justify-content: space-between; */
+}
+.project-inner .card {
+  margin-right: 25px;
+  transition: transform 0.2s;
+  width: 350px;
+}
+.project-inner .card:hover {
+  transform: scale(1.05);
+}
+
+.skype {
+  color: #00aff0;
+}
+.youtube {
+  color: #c4302b;
+}
+.discord {
+  color: #7289da;
+}
+.linkedin {
+  color: #0e76a8;
+}
+.google {
+  color: #1da462;
+}
+
+.photo-inner {
+  display: flex;
+}
+
+.my_photo {
+  width: 220px;
+  margin-right: 25px;
+  border-radius: 10%;
+}
+
+.logo {
+  width: 5em;
+  border: 1px solid black;
+  float: right;
+  bottom: 0;
+  right: 0;
+}
+.myGit {
+  color: #b22222;
+}
+
+.article-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 95%;
+  }
+  .project-inner {
+    flex-wrap: wrap;
+  }
+  .project-inner .card {
+    margin-bottom: 20px;
+    width: 42%;
+  }
+}
+@media (max-width: 480px) {
+  pre {
+    margin-left: -25px;
+  }
+  .JavaScript {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .photo-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .info_box {
+    padding-top: 20px;
+  }
+  .project-inner {
+    flex-wrap: wrap;
+  }
+  .project-inner .card {
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  pre {
+    margin-left: -25px;
+  }
+  .JavaScript {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 345px) {
+  pre {
+    margin-left: -35px;
+  }
+  .JavaScript {
+    font-size: 10px;
+  }
+}
