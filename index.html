@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KovganEugeneCV</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
@@ -133,17 +137,19 @@
                     </li>
                     <li>My Code Example
                         <pre><code class="JavaScript">
-                function cache(func) {
-            const cacheObj = {};
-            return (...args) => {
-            const key = JSON.stringify(args);
-            if (!(key in cacheObj)) {
-            const result = func.apply(null, args);
+function cache(func) {
+    const cacheObj = {};
+    return (...args) => {
+        const key = JSON.stringify(args);
+        if (!(key in cacheObj)) {
+            const result = func.apply(null,
+             args);
             cacheObj[key] = result;
-                    };
-                return cacheObj[key];
-                };
-            };</code></pre>
+            }
+        return cacheObj[key];
+    };
+}
+        </code></pre>
                     </li>
 
                 </ul>
@@ -155,8 +161,51 @@
                         <ul>
                             <li>&#9873; IT Academy FD2.</li>
                             <li>&#9872; Development of SPA in native JavaScript using MVC and firebase DB.</li>
-                            <li><a href="https://spa-games-calendar-30d72.web.app/">Project.</a> </li>
                         </ul>
+                        <div class="project-inner">
+
+                            <div class="card">
+                                <a href="https://spa-games-calendar-30d72.web.app/#past" target="_blank">
+                                    <img src="./img/img-project-1.png" class="card-img-top" alt="gameCalendar">
+                                    <div class="card-body">
+                                        <p class="card-text">game calendar in native JS and using the MVC model</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card">
+                                <a href="https://eugenekovgan.github.io/GoSerf/" target="_blank">
+                                    <img src="./img/img-project-2.png" class="card-img-top" alt="goSurf">
+                                    <div class="card-body">
+                                        <p class="card-text">Surfing site with adaptive, slick sliderand animation</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card">
+                                <a href="https://eugenekovgan.github.io/virtual-piano/" target="_blank">
+                                    <img src="./img/img-project-3.png" class="card-img-top" alt="virtualPiano">
+                                    <div class="card-body">
+                                        <p class="card-text">Virtual piano on JS</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="card">
+                                <a href="https://studio.youtube.com/video/rjdEc-vj0BM/edit" target="_blank">
+                                    <img src="./img/img-project-1.png" class="card-img-top" alt="presentation">
+                                    <div class="card-body">
+                                        <p class="card-text">game calendar in native JS and using the MVC model</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- <li><a href="https://spa-games-calendar-30d72.web.app/">Project.</a> </li> -->
+
                     </li>
                 </ul>
                 <ul>
@@ -180,7 +229,7 @@
                 <ul>
                     <li>&#10004; 01.2011 – 01.2012
                         <ul>
-                            <li>&#9873; «Specialized Mechanized Column -126», Minsk - production engineering department
+                            <li>&#9873; «Specialized Mechanized Column - 126», Minsk - production engineering department
                                 engineer.</li>
                         </ul>
                     </li>
@@ -245,6 +294,14 @@
         </div>
     </footer>
 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZ
+       gAN" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>

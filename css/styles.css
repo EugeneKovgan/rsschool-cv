@@ -19,10 +19,22 @@ html {
   margin: 0 auto;
   max-width: 80%;
 }
+
 .navbar {
   margin-bottom: 20px;
   top: 0px;
   position: sticky;
+  z-index: 1;
+}
+.nav-link {
+  height: 50px;
+  padding-right: 50px;
+  width: 120px;
+  text-align: center;
+}
+.nav-link:hover {
+  border: 2px solid darkgray;
+  border-radius: 5px;
 }
 
 h2 {
@@ -55,6 +67,22 @@ li a svg {
 }
 li a svg:hover {
   transform: scale(1.5);
+}
+
+.project-inner {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* right: 20px; */
+  /* justify-content: space-between; */
+}
+.project-inner .card {
+  margin-right: 25px;
+  transition: transform 0.2s;
+  width: 350px;
+}
+.project-inner .card:hover {
+  transform: scale(1.05);
 }
 
 .skype {
@@ -93,8 +121,7 @@ li a svg:hover {
 .myGit {
   color: #b22222;
 }
-footer {
-}
+
 .article-list {
   display: flex;
   justify-content: space-between;
@@ -104,11 +131,35 @@ footer {
 }
 
 @media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
   .container {
     max-width: 95%;
   }
+  .project-inner {
+    flex-wrap: wrap;
+  }
+  .project-inner .card {
+    margin-bottom: 20px;
+    width: 42%;
+  }
 }
-
+@media (max-width: 480px) {
+  pre {
+    margin-left: -25px;
+  }
+  .JavaScript {
+    font-size: 14px;
+  }
+}
 @media (max-width: 425px) {
   .photo-inner {
     display: flex;
@@ -116,5 +167,27 @@ footer {
   }
   .info_box {
     padding-top: 20px;
+  }
+  .project-inner {
+    flex-wrap: wrap;
+  }
+  .project-inner .card {
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  pre {
+    margin-left: -25px;
+  }
+  .JavaScript {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 345px) {
+  pre {
+    margin-left: -35px;
+  }
+  .JavaScript {
+    font-size: 10px;
   }
 }
