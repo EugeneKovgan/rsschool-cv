@@ -1,8 +1,8 @@
 <body>
-    <div class="conteiner">
+    <div class="container">
         <div class="header">
             <div class="photo">
-                <img src="img_2.JPG" alt="my_photo" width="150px" class="left img" </div>
+                <img src="./img/img_2.JPG" alt="my_photo" width="150px" class="left img" </div>
                 <div class="author">
                     <div class="info_box">
                         <h1>EUGENE KOVGAN</h1>
@@ -61,7 +61,7 @@
                                 </ul>
                             </li>
                         </ul>
-                </ul>
+                    </li>
                 <ul>
                     <li>&#10004; 01.2011 – 01.2012
                         <ul>
@@ -94,14 +94,13 @@
                             <li>&#9873; IT Academy FD2.</li>
                             <li>&#9872;Web application development on JavaScript.</li>
                         </ul>
-                    </li>
+                    </li>                    
                     <li>&#10004; 09.2019 –12.2019
                         <ul>
                             <li>&#9873; Rsschool 2020 Q1 (1-2 level).</li>
                         </ul>
                     </li>
                 </ul>
-            </div>
         </div>
-
+    </div>
 </body>
