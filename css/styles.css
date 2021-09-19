@@ -161,6 +161,15 @@ pre {
     font-size: 16px;
   }
 }
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 15px;
+  }
+  .nav-link {
+    margin-bottom: 5px;
+  }
+}
 @media (max-width: 768px) {
   html {
     font-size: 16px;
