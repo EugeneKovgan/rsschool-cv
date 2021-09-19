@@ -8,6 +8,7 @@
     </div>
 </div>
 <hr>
+<main>
     <h3>CONTACTS</h3>
     <hr>
     <ul class="contacts">
@@ -84,3 +85,4 @@
             </ul>
         </li>
     </ul>
+</main>
