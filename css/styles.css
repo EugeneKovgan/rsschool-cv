@@ -1,234 +1,237 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 html {
-  margin: 0 auto;
-  background-color: rgb(243, 241, 234);
-  font-size: 18px;
-  display: inline-block;
-  max-width: 100%;
+    margin: 0 auto;
+    background-color: rgb(243, 241, 234);
+    font-size: 18px;
+    display: inline-block;
+    max-width: 100%;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 80%;
+    margin: 0 auto;
+    max-width: 80%;
 }
 
 .navbar {
-  margin-bottom: 20px;
-  top: 0px;
-  position: sticky;
-  z-index: 1;
+    margin-bottom: 20px;
+    top: 0px;
+    position: sticky;
+    z-index: 1;
 }
 .nav-link {
-  height: 50px;
-  padding-right: 50px;
-  width: 120px;
-  text-align: center;
+    height: 50px;
+    padding-right: 50px;
+    width: 120px;
+    text-align: center;
 }
 .nav-link:hover {
-  border: 2px solid darkgray;
-  border-radius: 5px;
+    border: 2px solid darkgray;
+    border-radius: 5px;
 }
 
 h2 {
-  font-size: 32px;
-  line-height: normal;
-  color: #b22222;
+    font-size: 32px;
+    line-height: normal;
+    color: #b22222;
 }
 
 h3 {
-  font-size: 24px;
-  line-height: normal;
-  color: #179c06;
+    font-size: 24px;
+    line-height: normal;
+    color: #179c06;
 }
 h4 {
-  font-size: 24px;
-  text-decoration: underline;
+    font-size: 24px;
+    text-decoration: underline;
 }
 h5 {
-  font-size: 24px;
-  text-decoration: underline;
-  margin-top: 25px;
+    font-size: 24px;
+    text-decoration: underline;
+    margin-top: 25px;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 .contacts-icons {
-  display: flex;
-  justify-content: space-between;
-  max-width: 700px;
-  padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    padding-left: 10px;
 }
 
 li a svg {
-  transition: transform 0.2s;
-  margin: 0 auto;
-  color: black;
+    transition: transform 0.2s;
+    margin: 0 auto;
+    color: black;
 }
 li a svg:hover {
-  transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 pre {
-  margin-top: 10px;
-  margin-left: -35px;
+    margin-top: 10px;
+    margin-left: -35px;
 }
 
 .project-inner {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 .project-inner .card,
 .presentation {
-  margin-right: 15px;
-  transition: transform 0.2s;
-  /* width: 380px; */
-  width: 32%;
-  padding-bottom: 15px;
+    margin-right: 15px;
+    transition: transform 0.2s;
+    /* width: 380px; */
+    width: 32%;
+    padding-bottom: 15px;
 }
 .project-inner .card:hover,
 .presentation:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
+}
+.courses {
+    justify-content: left;
 }
 .presentation {
-  margin-top: 10px;
-  border-radius: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 .skype {
-  color: #00aff0;
+    color: #00aff0;
 }
 .youtube {
-  color: #c4302b;
+    color: #c4302b;
 }
 .discord {
-  color: #7289da;
+    color: #7289da;
 }
 .linkedin {
-  color: #0e76a8;
+    color: #0e76a8;
 }
 .google {
-  color: #1da462;
+    color: #1da462;
 }
 
 .photo-inner {
-  display: flex;
+    display: flex;
 }
 
 .my_photo {
-  width: 220px;
-  margin-right: 25px;
-  border-radius: 10%;
+    width: 220px;
+    margin-right: 25px;
+    border-radius: 10%;
 }
 
 .logo-rss {
-  width: 5em;
-  border: 1px solid black;
-  float: right;
-  bottom: 0;
-  right: 0;
-  transition: transform 0.2s;
+    width: 5em;
+    border: 1px solid black;
+    float: right;
+    bottom: 0;
+    right: 0;
+    transition: transform 0.2s;
 }
 .logo-rss:hover {
-  transform: scale(1.5);
+    transform: scale(1.5);
 }
 .myGit {
-  color: #b22222;
+    color: #b22222;
 }
 
 .article-list {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  margin: 0;
-  padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin: 0;
+    padding-left: 10px;
 }
 @media (max-width: 1160px) {
-  .project-inner .card h4 {
-    font-size: 18px;
-  }
-  .card-text {
-    font-size: 16px;
-  }
+    .project-inner .card h4 {
+        font-size: 18px;
+    }
+    .card-text {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 991px) {
-  .navbar-nav {
-    margin-top: 15px;
-  }
-  .nav-link {
-    margin-bottom: 5px;
-  }
+    .navbar-nav {
+        margin-top: 15px;
+    }
+    .nav-link {
+        margin-bottom: 5px;
+    }
 }
 @media (max-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-  h2 {
-    font-size: 24px;
-  }
+    html {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 24px;
+    }
 
-  h3 {
-    font-size: 18px;
-  }
-  pre {
-    margin-left: -30px;
-  }
-  .container {
-    max-width: 95%;
-  }
-  .project-inner {
-    flex-wrap: wrap;
-  }
-  .project-inner .card,
-  .presentation {
-    margin-bottom: 20px;
-    width: 46%;
-  }
+    h3 {
+        font-size: 18px;
+    }
+    pre {
+        margin-left: -30px;
+    }
+    .container {
+        max-width: 95%;
+    }
+    .project-inner {
+        flex-wrap: wrap;
+    }
+    .project-inner .card,
+    .presentation {
+        margin-bottom: 20px;
+        width: 46%;
+    }
 }
 @media (max-width: 480px) {
-  .JavaScript {
-    font-size: 14px;
-  }
-  .project-inner .card,
-  .presentation {
-    width: 95%;
-  }
+    .JavaScript {
+        font-size: 14px;
+    }
+    .project-inner .card,
+    .presentation {
+        width: 95%;
+    }
 }
 @media (max-width: 425px) {
-  .photo-inner {
-    display: flex;
-    flex-direction: column;
-  }
-  .info_box {
-    padding-top: 20px;
-  }
-  .project-inner {
-    flex-wrap: wrap;
-  }
-  .project-inner .card,
-  .presentation {
-    margin-bottom: 20px;
-    width: 90%;
-  }
+    .photo-inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .info_box {
+        padding-top: 20px;
+    }
+    .project-inner {
+        flex-wrap: wrap;
+    }
+    .project-inner .card,
+    .presentation {
+        margin-bottom: 20px;
+        width: 90%;
+    }
 
-  .JavaScript {
-    font-size: 12px;
-  }
+    .JavaScript {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 345px) {
-  .JavaScript {
-    font-size: 11px;
-  }
+    .JavaScript {
+        font-size: 11px;
+    }
 }
