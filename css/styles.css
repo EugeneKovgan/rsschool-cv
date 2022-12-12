@@ -17,7 +17,9 @@ html {
 
 .container {
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 1400px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .navbar {
@@ -38,13 +40,11 @@ html {
   border: 2px solid darkgray;
   border-radius: 5px;
 }
-
 h2 {
   font-size: 32px;
   line-height: normal;
   color: #b22222;
 }
-
 h3 {
   font-size: 24px;
   line-height: normal;
@@ -55,11 +55,11 @@ h4 {
   text-decoration: underline;
 }
 h5 {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-decoration: underline;
-  margin-top: 25px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-
 a {
   text-decoration: none;
   color: black;
@@ -67,9 +67,8 @@ a {
 .contacts-icons {
   display: flex;
   gap: 3rem;
-  padding-left: 0.5rem;
+  padding-left: 0;
 }
-
 li a svg {
   transition: transform 0.2s;
   margin: 0 auto;
@@ -78,27 +77,24 @@ li a svg {
 li a svg:hover {
   transform: scale(1.3);
 }
-
-pre {
-  margin-top: 10px;
-  margin-left: -35px;
-}
 .project-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
   margin-top: 1rem;
-  display: flex;
-  gap: 1rem;
 }
-.project-inner .card,
-.presentation {
+.project-inner .card {
+  border-radius: 1 rem;
   cursor: pointer;
-  display: flex;
-  gap: 1rem;
   transition: transform 0.2s;
-  width: 30%;
 }
-.project-inner .card:hover,
-.presentation:hover {
+.project-inner .card:hover {
   transform: scale(1.05);
+}
+.project-inner iframe {
+  cursor: pointer;
+  max-width: 32%;
 }
 .courses {
   justify-content: left;
@@ -107,8 +103,8 @@ pre {
 .card,
 .card img {
   border-radius: 1rem;
+  cursor: pointer;
 }
-
 .skype {
   color: #00aff0;
 }
@@ -124,17 +120,17 @@ pre {
 .google {
   color: #1da462;
 }
-
 .photo-inner {
   display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
 }
-
-.my_photo {
-  width: 220px;
-  margin-right: 25px;
+.photo-inner img {
   border-radius: 1rem;
+  height: auto;
+  width: 100%;
 }
-
 .logo-rss {
   width: 5em;
   border: 1px solid black;
@@ -149,29 +145,33 @@ pre {
 .myGit {
   color: #b22222;
 }
-
 .article-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 1rem;
   margin: 0;
-  padding-left: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.75rem;
 }
 @media (max-width: 1160px) {
   .project-inner .card h4 {
-    font-size: 18px;
+    font-size: 1.1rem;
   }
   .card-text {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
-
 @media (max-width: 991px) {
   .navbar-nav {
-    margin-top: 15px;
+    margin-top: 1rem;
+    gap: 0.1rem;
   }
-  .nav-link {
-    margin-bottom: 5px;
+  .navbar-nav .nav-link {
+    /* padding: 0; */
+    padding-left: 0.5rem;
+    /* margin-left: 0.5rem; */
   }
 }
 @media (max-width: 768px) {
@@ -181,58 +181,43 @@ pre {
   h2 {
     font-size: 24px;
   }
-
   h3 {
     font-size: 18px;
   }
   pre {
     margin-left: -30px;
   }
-  .container {
-    max-width: 95%;
+}
+@media (max-width: 620px) {
+  .project-inner {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .photo-inner {
+    flex-direction: column;
+  }
+  .contacts-icons {
+    justify-content: space-between;
+    gap: 0;
   }
   .project-inner {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  .project-inner .card,
   .presentation {
-    margin-bottom: 1rem;
-    width: 46%;
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
   .JavaScript {
     font-size: 14px;
   }
-  .project-inner .card,
-  .presentation {
-    width: 95%;
-  }
 }
 @media (max-width: 425px) {
-  .photo-inner {
-    display: flex;
-    flex-direction: column;
-  }
-  .info_box {
-    padding-top: 1rem;
-  }
-  .project-inner {
-    flex-wrap: wrap;
-  }
-  .project-inner .card,
-  .presentation {
-    margin-bottom: 1rem;
-    width: 90%;
-  }
-
   .JavaScript {
     font-size: 12px;
   }
 }
-
 @media (max-width: 345px) {
   .JavaScript {
-    font-size: 11px;
   }
 }
