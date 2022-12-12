@@ -97,7 +97,13 @@ li a svg:hover {
   max-width: 32%;
 }
 .courses {
+  margin-bottom: 1rem;
   justify-content: left;
+}
+.card_courses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .presentation,
 .card,
@@ -140,7 +146,7 @@ li a svg:hover {
   transition: transform 0.2s;
 }
 .logo-rss:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 .myGit {
   color: #b22222;
