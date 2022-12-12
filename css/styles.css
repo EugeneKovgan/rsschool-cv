@@ -19,10 +19,24 @@ html {
   margin: 0 auto;
   max-width: 80%;
 }
+
 .navbar {
-  margin-bottom: 20px;
-  top: 0px;
+  margin-bottom: 1rem;
+  top: 0;
   position: sticky;
+  z-index: 1;
+}
+.navbar-nav {
+  display: flex;
+  gap: 2rem;
+}
+.nav-link {
+  border: 2px solid #f8f9fa;
+  border-radius: 5px;
+}
+.nav-link:hover {
+  border: 2px solid darkgray;
+  border-radius: 5px;
 }
 
 h2 {
@@ -36,6 +50,15 @@ h3 {
   line-height: normal;
   color: #179c06;
 }
+h4 {
+  font-size: 24px;
+  text-decoration: underline;
+}
+h5 {
+  font-size: 24px;
+  text-decoration: underline;
+  margin-top: 25px;
+}
 
 a {
   text-decoration: none;
@@ -43,9 +66,8 @@ a {
 }
 .contacts-icons {
   display: flex;
-  justify-content: space-between;
-  max-width: 700px;
-  padding-left: 10px;
+  gap: 3rem;
+  padding-left: 0.5rem;
 }
 
 li a svg {
@@ -54,7 +76,37 @@ li a svg {
   color: black;
 }
 li a svg:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
+}
+
+pre {
+  margin-top: 10px;
+  margin-left: -35px;
+}
+.project-inner {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.project-inner .card,
+.presentation {
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.2s;
+  width: 30%;
+}
+.project-inner .card:hover,
+.presentation:hover {
+  transform: scale(1.05);
+}
+.courses {
+  justify-content: left;
+}
+.presentation,
+.card,
+.card img {
+  border-radius: 1rem;
 }
 
 .skype {
@@ -80,41 +132,107 @@ li a svg:hover {
 .my_photo {
   width: 220px;
   margin-right: 25px;
-  border-radius: 10%;
+  border-radius: 1rem;
 }
 
-.logo {
+.logo-rss {
   width: 5em;
   border: 1px solid black;
   float: right;
   bottom: 0;
   right: 0;
+  transition: transform 0.2s;
+}
+.logo-rss:hover {
+  transform: scale(1.5);
 }
 .myGit {
   color: #b22222;
 }
-footer {
-}
+
 .article-list {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 1rem;
   margin: 0;
   padding-left: 10px;
 }
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 95%;
+@media (max-width: 1160px) {
+  .project-inner .card h4 {
+    font-size: 18px;
+  }
+  .card-text {
+    font-size: 16px;
   }
 }
 
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 15px;
+  }
+  .nav-link {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+  pre {
+    margin-left: -30px;
+  }
+  .container {
+    max-width: 95%;
+  }
+  .project-inner {
+    flex-wrap: wrap;
+  }
+  .project-inner .card,
+  .presentation {
+    margin-bottom: 1rem;
+    width: 46%;
+  }
+}
+@media (max-width: 480px) {
+  .JavaScript {
+    font-size: 14px;
+  }
+  .project-inner .card,
+  .presentation {
+    width: 95%;
+  }
+}
 @media (max-width: 425px) {
   .photo-inner {
     display: flex;
     flex-direction: column;
   }
   .info_box {
-    padding-top: 20px;
+    padding-top: 1rem;
+  }
+  .project-inner {
+    flex-wrap: wrap;
+  }
+  .project-inner .card,
+  .presentation {
+    margin-bottom: 1rem;
+    width: 90%;
+  }
+
+  .JavaScript {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 345px) {
+  .JavaScript {
+    font-size: 11px;
   }
 }
