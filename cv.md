@@ -8,11 +8,9 @@
     </div>
 </div>
 <hr>
-<main>
-    <h3>CONTACTS</h3>
+<h3>CONTACTS</h3>
     <hr>
-    <ul class="contacts">
-        <li>Minsk</li>
+    <ul class="contacts">        
         <li>&#9742; +375 - 29 - 771 - 48 - 92</li>
         <li><a href="https://github.com/eugenekovgan"> my Github </a></li>
         <li><a href="mailto:jugin.kovgan87@gmail.com">&#128386; jugin.kovgan87@gmail.com </a></li>
