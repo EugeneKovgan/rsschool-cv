@@ -45,7 +45,7 @@ function deepCount(a) {
 - IT Academy FD2 (08.2020 – 11.2020)
 
 ## __Education__ 
-- __University:__ Belarusian State Agrarian Technical University»
+- __University:__ Belarusian State Agrarian Technical University (09.2005 – 06.2010)
 - 
 ## __Courses:__
 - School of English. Intermediate+ (08.2022 – current time)
