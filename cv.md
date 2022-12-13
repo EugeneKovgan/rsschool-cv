@@ -40,15 +40,15 @@ function deepCount(a) {
 ```
 
 ## __Experience__
-- Freelance
-- DataMola Internship
-- IT Academy FD2
+- Freelance (07.2020 – current time)
+- DataMola Internship (02.2022 – 05.2022)
+- IT Academy FD2 (08.2020 – 11.2020)
 
 ## __Education__ 
 - __University:__ Belarusian State Agrarian Technical University»
 - 
 ## __Courses:__
-- School of English. Intermediate+ (07.2022 – current time)
-- School of English. Intermediate (01.2022 –07.2022)
-- School of English. Pre-intermediate (07.2021 –12.2021)
+- School of English. Intermediate+ (08.2022 – current time)
+- School of English. Intermediate (01.2022 – 07.2022)
+- School of English. Pre-intermediate (07.2021 – 12.2021)
 
